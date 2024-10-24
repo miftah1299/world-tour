@@ -1,0 +1,10 @@
+/* 
+    CSS for the Country component
+*/
+
+.country {
+    border: 2px solid lawngreen;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+}
