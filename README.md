@@ -6,5 +6,9 @@ This project is a React-based website that showcases various countries around th
 
 Check out the live demo of the website: [world-tour](https://world-tour-website-react.surge.sh)
 
-## Project Structure
+## Used Technologies
 
+-   **React**: A JavaScript library for building user interfaces.
+-   **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
+-   **ESLint**: A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+-   **Surge**: A static web publishing platform for deploying projects.
