@@ -14,23 +14,27 @@ const Country = ({ country, handleVisitedCountry }) => {
     return (
         <div className={`country ${visited && "visited"}`}>
             <h3>Name: {name?.common}</h3>
-            <img src={flags.png} alt="flag" />
-            <p>Population: {population}</p>
-            <p>Area: {area} km²</p>
-            <p>
-                <small>Code: {cca3}</small>
-            </p>
+            <img className="country-flag" src={flags.png} alt="flag" />
+            <div className="country-details">
+                <p>Population: {population}</p>
+                <p>Area: {area} km²</p>
+                <p>
+                    <small>Code: {cca3}</small>
+                </p>
 
-            <button>Mark Visited</button>
-            <button onClick={handleVisited}>
-                {visited ? "Visited" : "Going"}
-            </button>
+                <div className="btn-container">
+                    <button className="btn">Mark Visited</button>
+                    <button className="btn" onClick={handleVisited}>
+                        {visited ? "Visited" : "Going"}
+                    </button>
+                </div>
 
-            {visited ? (
-                <p>I have visited {name?.common}</p>
-            ) : (
-                "I will visit soon"
-            )}
+                {visited ? (
+                    <p>I have visited {name?.common}</p>
+                ) : (
+                    <p>I will visit soon</p>
+                )}
+            </div>
         </div>
     );
 };
